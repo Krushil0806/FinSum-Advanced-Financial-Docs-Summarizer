@@ -1,108 +1,117 @@
-💰 FinSum – Advanced Financial Document Summarizer
-📌 Overview
+# 💰 FinSum — Advanced Financial Document Summarizer
+> AI-powered NLP system that converts lengthy financial documents into concise, readable insights.
 
-Financial documents such as annual reports, balance sheets, and investment reports are often lengthy and difficult to understand.
-FinSum is an AI-powered system that automatically summarizes financial documents into concise and meaningful insights using Natural Language Processing (NLP) and Machine Learning.
+---
 
-This project helps investors, analysts, and students quickly understand financial data without reading hundreds of pages.
+## 📖 Table of Contents
+- Overview  
+- Problem Statement  
+- Solution  
+- Features  
+- System Architecture  
+- Tech Stack  
+- Project Structure  
+- Installation  
+- Usage  
+- Example Workflow  
+- Results  
+- Future Enhancements  
+- Contributing  
+- License  
 
-🚨 Problem Statement
+---
 
-Financial documents are:
+## 📌 Overview
+Financial documents such as **annual reports, balance sheets, earnings reports, and investment reports** often contain hundreds of pages filled with complex terminology.
 
-Very long and complex
+Reading and understanding these documents manually is time-consuming and difficult for investors, students, and analysts.
 
-Difficult for non-finance users to understand
+**FinSum** is an NLP-based system that automatically extracts the most important information and generates concise summaries, saving time and improving financial decision-making.
 
-Time-consuming to analyze manually
+---
 
-Filled with technical financial terminology
+## 🚨 Problem Statement
 
-Manual analysis leads to:
+Traditional financial document analysis suffers from:
 
-⏱️ High time consumption
+- Extremely long and complex documents  
+- Heavy use of technical financial terminology  
+- Manual reading is slow and inefficient  
+- Important insights are difficult to identify quickly  
 
-❌ Human errors
+### Current Challenges
 
-📉 Reduced productivity
+| Challenge | Impact |
+|---|---|
+| Manual document review | Time-consuming |
+| Human errors | Missed insights |
+| Information overload | Slow decision making |
+| Complex financial language | Difficult for beginners |
 
-🎯 Objectives
+---
 
-The goal of FinSum is to:
+## 💡 Solution
 
-Automatically summarize financial documents
+FinSum automates the entire pipeline:
 
-Extract important financial insights
+1. Extract text from financial documents  
+2. Clean and preprocess the text  
+3. Detect important sentences & keywords  
+4. Generate a concise summary using NLP & ML  
 
-Reduce manual effort and reading time
+**Result → Readable financial insights in seconds**
 
-Improve decision-making speed
+---
 
-Make financial data easier to understand
+## ✨ Key Features
 
-✨ Key Features
+- 📄 Upload financial documents (PDF/TXT)  
+- 🧹 Automatic text cleaning & preprocessing  
+- 🔎 Financial keyword extraction  
+- 🧠 NLP-based summarization engine  
+- ⚡ Fast automated pipeline  
+- 📊 Ready for web app deployment  
 
-📄 Upload financial PDF/Text documents
+---
 
-🧹 Text preprocessing and cleaning
+## 🏗️ System Architecture
 
-🔍 Financial keyword extraction
+```
+Financial Document → Text Extraction → Preprocessing → 
+Feature Engineering → NLP Summarization → Final Summary
+```
 
-🧠 NLP-based summarization
+### Processing Pipeline
+1. Document Input  
+2. Text Cleaning & Tokenization  
+3. Stopword Removal & Lemmatization  
+4. Sentence Scoring (TF-IDF / Embeddings)  
+5. Summary Generation  
 
-📊 Insight generation
+---
 
-⚡ Fast and automated processing
+## 🛠️ Tech Stack
 
-🧠 How It Works
-Step 1 — Document Input
+### 👨‍💻 Language
+- Python
 
-User uploads a financial document (PDF / TXT).
+### 📚 Libraries
 
-Step 2 — Text Preprocessing
+| Category | Tools |
+|---|---|
+| Data Processing | Pandas, NumPy |
+| NLP | NLTK, SpaCy |
+| Machine Learning | Scikit-learn |
+| Deep Learning | HuggingFace Transformers |
+| Visualization | Matplotlib, Seaborn |
+| Data Profiling | YData Profiling |
+| Deployment (Optional) | Streamlit |
 
-Noise removal
+---
 
-Tokenization
+## 📂 Project Structure
 
-Stopword removal
-
-Lemmatization
-
-Step 3 — NLP Processing
-
-TF-IDF / Embeddings
-
-Important sentence extraction
-
-Keyword detection
-
-Step 4 — Summary Generation
-
-System generates a concise summary of the financial document.
-
-🛠️ Tech Stack
-Programming Language
-
-Python
-
-Libraries Used
-
-Pandas, NumPy → Data processing
-
-NLTK / SpaCy → NLP preprocessing
-
-Scikit-learn → ML models
-
-Transformers (HuggingFace) → Advanced summarization
-
-Matplotlib, Seaborn → Visualization
-
-YData Profiling → Dataset analysis
-
-Streamlit → Web App (Optional)
-
-📂 Project Structure
+```
 FinSum/
 │
 ├── data/
@@ -129,62 +138,79 @@ FinSum/
 │
 ├── requirements.txt
 └── README.md
+```
 
-⚙️ Installation
-1️⃣ Clone Repository
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/your-username/FinSum-Advanced-Financial-Docs-Summarizer.git
 cd FinSum-Advanced-Financial-Docs-Summarizer
+```
 
-2️⃣ Create Virtual Environment (Recommended)
+### 2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate
+```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-▶️ Run the Project
-Run Python Script
+---
+
+## ▶️ Usage
+
+### Run Python Application
+```bash
 python app/app.py
+```
 
-Run Streamlit App (Optional)
+### Run Streamlit Web App (Optional)
+```bash
 streamlit run app/app.py
+```
 
-📊 Example Workflow
+---
 
-1️⃣ Upload financial report
-2️⃣ System cleans & processes text
-3️⃣ Important sentences detected
-4️⃣ Final summary generated
+## 🔄 Example Workflow
+1. Upload financial report  
+2. System preprocesses text  
+3. Important sentences detected  
+4. Final summary generated  
 
-📈 Future Improvements
+---
 
-Financial sentiment analysis
+## 📊 Expected Results
+- ⏱️ 80–90% reduction in reading time  
+- 📄 Concise and relevant summaries  
+- 📈 Faster financial analysis  
 
-Dashboard for visualization
+---
 
-Multi-document summarization
+## 🚀 Future Enhancements
+- Financial Sentiment Analysis  
+- Multi-document summarization  
+- Interactive dashboard  
+- Multi-language support  
+- Cloud deployment  
 
-Web deployment
+---
 
-Multi-language support
-
-🎓 Use Cases
-
-Investors
-
-Financial Analysts
-
-Students
-
-Researchers
-
-Business Professionals
-
-🤝 Contribution
-
+## 🤝 Contributing
 Contributions are welcome!
-Feel free to fork this repository and submit a pull request.
 
-⭐ Support
+1. Fork the repo  
+2. Create a new branch  
+3. Commit changes  
+4. Submit a Pull Request  
 
-If you like this project, please give it a ⭐ on GitHub!
+---
+
+## ⭐ Support
+If you find this project useful, please give it a ⭐ on GitHub.
+
