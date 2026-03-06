@@ -122,13 +122,9 @@ FinSum/
 │   └── EDA_and_Model.ipynb
 │
 ├── src/
-│   ├── preprocessing.py
+│   ├── multimodel.py
 │   ├── summarizer.py
 │   ├── keyword_extraction.py
-│   └── utils.py
-│
-├── models/
-│   └── trained_model.pkl
 │
 ├── outputs/
 │   └── summaries/
@@ -168,13 +164,6 @@ pip install -r requirements.txt
 ### Run Python Application
 ```bash
 python app/app.py
-```
-
-### Run Streamlit Web App (Optional)
-```bash
-streamlit run app/app.py
-```
-
 ---
 
 ## 🔄 Example Workflow
